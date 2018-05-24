@@ -1,0 +1,63 @@
+<!--
+  Generated template for the AdoptarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+    <ion-header text="center" color="dark"no-border>
+  
+        <ion-navbar color="dark">
+           <img src="/assets/imgs/logos2.png">
+          </ion-navbar>
+</ion-header>
+
+<br>
+<br>
+<br>
+<br>
+<ion-content padding>
+<ion-card >
+    <ion-item color="dark" text-center>
+       <b> <h2  color="secondary"  text="center">-------- ADOPTA AQUÍ --------</h2></b>
+   
+    </ion-item>
+   
+    <ion-list  >
+        <ion-item >
+          <ion-label color="dark"  stacked >Nombre </ion-label>
+          <ion-input  type="text" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+      
+        <ion-item color="dark">
+            <ion-label color="secondary"  stacked >Apellido </ion-label>
+            <ion-input type="text" [(ngModel)]="apellido"></ion-input>
+          </ion-item>
+
+        <ion-item>
+          <ion-label color="dark" stacked >E-mail</ion-label>
+          <ion-input type="text" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      
+        <ion-item color="dark">
+            <ion-label color="secondary" stacked>Edad</ion-label>
+            <ion-input  type="number" [(ngModel)]="edad"></ion-input>
+          </ion-item>
+
+        <ion-item>
+            <ion-label color="dark" stacked>Telefono</ion-label>
+            <ion-input type="number" [(ngModel)]="telefono"></ion-input>
+          </ion-item>
+
+        <ion-item color="dark">
+          <ion-label color="secondary" stacked>Mensaje</ion-label>
+          <ion-input type="text" [(ngModel)]="mensaje"></ion-input>
+        </ion-item>
+      
+       
+      </ion-list>
+      <ion-item  text-center>
+              
+          <button  ion-button (click)="enviarDatos()" round outline>Enviar</button>
+        </ion-item>
+      </ion-card>
+</ion-content>

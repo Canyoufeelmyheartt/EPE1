@@ -1,0 +1,66 @@
+<!--
+  Generated template for the AdoptarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<link href="https://fonts.googleapis.com/css?family=Cuprum|Dosis" rel="stylesheet">
+<ion-header text="center" color="dark"no-border>
+    <ion-toolbar color="dark">
+       
+        <button ion-button menuToggle>  <!-- falta en el ts funcion-->
+          <ion-icon name="menu" ></ion-icon>
+        </button>
+        <img src="/assets/imgs/logos2.png">
+      </ion-toolbar>
+  </ion-header>
+  <ion-content>
+      <button ion-item (click)="can(CanPage)" text-center>
+          <img src="/assets/imgs/portada1.png">
+         </button>
+         <button ion-item (click)="cat(CatPage)" text-center>
+            <img src="/assets/imgs/portada3.png">
+          </button>
+          <ion-fab  top right edge>
+              <button  color="dark" ion-fab mini><ion-icon name="add"></ion-icon></button>
+              <ion-fab-list>
+                <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+                <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+                <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+                <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+              </ion-fab-list>
+            </ion-fab>
+  </ion-content>
+  
+  <!--
+ aqui va lo del menu baboso!
+-->
+
+ 
+<ion-menu [content]="mycontent">    <ion-content>
+  <ion-toolbar>
+    <img src="/assets/imgs/menu1.jpg">
+    
+  <ion-list>
+    <button ion-item  menuClose name="logo-apple" ><ion-icon name="home">   Home  </ion-icon>  
+    </button>
+
+
+    <button ion-item (click)="comoayudar(ComoayudarPage)"> <ion-icon name="logo-octocat">   ¿Como Ayudar? </ion-icon> 
+    </button>
+
+    <button ion-item (click)="quehacemos(QuehacemosPage)"name="logo-apple" ><ion-icon name="md-paw"> ¿Que hacemos? </ion-icon>
+    </button>
+
+   <button ion-item (click)="quienesomos(QuienesomosPage)"name="logo-apple" ><ion-icon name="ios-people">   Quienes somos</ion-icon>
+   </button>
+
+
+    </ion-list>
+  
+
+    </ion-toolbar>
+    <img src="/assets/imgs/pata.jpg">
+</ion-content>
+</ion-menu>
+ <ion-nav #mycontent [root]="rootPage"></ion-nav>

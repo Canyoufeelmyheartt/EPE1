@@ -1,0 +1,55 @@
+<!--
+  Generated template for the CuotaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header text="center" color="dark"no-border>
+  <ion-navbar color="dark">
+    <img src="/assets/imgs/logos2.png">
+   </ion-navbar>
+ 
+
+</ion-header>
+
+
+<ion-content text="center" >
+
+    <ion-card >
+    <ion-card>
+  
+        <img src="assets/imgs/cuota.jpg">
+    
+        <ion-item >
+            <h1 text-center><b>Fija una pequeña cuota<br> mensual</b></h1>
+        </ion-item>
+      </ion-card>
+
+  <ion-list inset>
+
+    <ion-item >
+      <ion-label color="dark" stacked>Nombre Completo</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+  
+    <ion-item >
+      <ion-label color="dark" stacked>Rut</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  
+    <ion-item >
+      <ion-label color="dark" stacked>Monto Mensual</ion-label>
+      <ion-input type="number" [(ngModel)]="peso"></ion-input>
+    </ion-item>
+  
+    <ion-item >
+      <ion-label color="dark" stacked>Telefono</ion-label>
+      <ion-input type="number" [(ngModel)]="altura"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-item color="dark"  text-center>
+              
+      <button color="secondary" ion-button (click)="enviarDatos()" round outline>Enviar</button>
+    </ion-item>
+    </ion-card>
+</ion-content>

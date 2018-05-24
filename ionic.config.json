@@ -1,0 +1,8 @@
+{
+  "name": "corazon-animal",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
