@@ -18,12 +18,10 @@ export class HomePage {
   }
 comoayudar(){
 this.navCtrl.push(ComoayudarPage)
-
 }
 
 quehacemos(){
   this.navCtrl.push(QuehacemosPage)
-
 }
 quienesomos(){
   this.navCtrl.push(QuienesomosPage)
