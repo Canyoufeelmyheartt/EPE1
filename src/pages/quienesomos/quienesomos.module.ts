@@ -10,4 +10,5 @@ import { QuienesomosPage } from './quienesomos';
     IonicPageModule.forChild(QuienesomosPage),
   ],
 })
+
 export class QuienesomosPageModule {}
