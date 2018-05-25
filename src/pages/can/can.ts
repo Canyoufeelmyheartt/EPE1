@@ -7,7 +7,7 @@ import { AdoptarPage } from '../adoptar/adoptar';
  * Generated class for the CanPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * Ionic pages and navigation..
  */
 
 @IonicPage()
